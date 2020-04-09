@@ -4,7 +4,7 @@
 #include<unistd.h>
 #include<sys/stat.h>
 
-void  main()
+int main()
 {
   int i=0;
   int j=0;	
@@ -32,5 +32,5 @@ void  main()
      wait();
      printf("Parent process is completed.\n");
   }
-	
+return 0;	
 }
