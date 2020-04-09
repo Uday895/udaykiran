@@ -9,8 +9,10 @@ int main()
   int i=0;
   int j=0;	
   pid_t pid;
+  do{
   printf("Enter a number greater than zero:  \n"); 
-  scanf("%d", &j);	
+  scanf("%d", &j);
+  }while(j<=0);
   pid = fork();
   if (pid== 0){
      printf("%d\n",j);
